@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Books Books and more Books</string>
+    <string name="testTitle">Title</string>
+    <string name="testSubtitle">Subtitle</string>
+    <string name="testAuthor">Author</string>
+    <string name="InitialEmptyText">Enter Keywords</string>
+    <string name="NoNetwork">No Network Connection</string>
+    <string name="noBooks">No books match the keywords</string>
+    <string name="noTitle">No Title Found</string>
+    <string name="noSubTitle">No SubTitle Found</string>
+    <string name="noAuthor">No Author Found</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">24dp</dimen>
+    <dimen name="subTitle">20dp</dimen>
+    <dimen name="author">16dp</dimen>
+    <dimen name="standardSpace">8dp</dimen>
+</resources>
