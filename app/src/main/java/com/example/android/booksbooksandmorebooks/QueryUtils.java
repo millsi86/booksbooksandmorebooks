@@ -28,6 +28,7 @@ public class QueryUtils {
     // Tag for the log messages
     public static final String LOG_TAG = QueryUtils.class.getSimpleName();
     // Constant keys
+    private static final String JSON_TOTAL_ITEMS = "totalItems";
     private static final String JSON_ITEMS = "items";
     private static final String JSON_VOLUME_INFO = "volumeInfo";
     private static final String JSON_TITLE = "title";
@@ -167,6 +168,13 @@ public class QueryUtils {
         try {
             // Create a JSONObject from the JSON response string
             JSONObject baseJsonResponse = new JSONObject(bookJSON);
+
+            // Check if there are no books returned for the keywords and if so return noll
+            int totalItems = baseJsonResponse.getInt(JSON_TOTAL_ITEMS);
+
+            if (totalItems == 0) {
+                return null;
+            }
 
             // Extract the JSONArray associated with the key called "features",
             // which represents a list of features (or earthquakes).
